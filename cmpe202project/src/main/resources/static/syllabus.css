@@ -1,0 +1,45 @@
+/* General body styling */
+body {
+    font-family: Arial, sans-serif; /* Sets the font for the entire page */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Aligns everything centrally on the cross-axis */
+}
+
+
+
+/* Styling for the page title */
+#pageTitle {
+    margin: 20px 0; /* Adds space around the title */
+    text-align: center; /* Centers the text within the h1 element */
+}
+
+/* Form styling */
+#syllabusForm {
+    width: 50%; /* Adjust this value to suit your layout needs */
+    display: flex;
+    flex-direction: column;
+}
+
+/* Style inputs and textarea */
+input[type="text"],
+textarea {
+    padding: 10px;
+    margin-bottom: 10px; /* Adds space below each input/textarea */
+    border: 1px solid #ccc; /* Light grey border */
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #0056b3; /* Example: a medium blue background */
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+
+button:hover {
+    background-color: #003d80; /* A darker blue on hover */
+}

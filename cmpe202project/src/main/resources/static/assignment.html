@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pineapple</title>
+    <link rel="stylesheet" type="text/css" href="assignment.css">
+    <link rel="stylesheet" href="navbar.css">
+</head>
+<body>
+<nav>
+    <h1><a href="homepage.html" style="color: white; text-decoration: none;">Pineapple</a></h1>    <ul>
+    <li><a href="homepage.html" id="home" >Home</a></li>
+    <li><a href="javascript:history.back()" id="assignments"  >Assignments</a></li>
+</ul>
+</nav>
+
+<main id="courseContainer">
+    <button class="open-button" onclick="openForm()">Edit Grade</button>
+    <div class="form-popup" id="myForm">
+        <form action="/assignments/setGrade" method = "post" class="form-container">
+            <h1>Edit Grade</h1>
+
+            <label><b>StudentID<br></b></label>
+            <input type="number" placeholder="StudentID" name="studentId" required>
+            <br>
+            <label><b>Grade<br></b></label>
+            <input type="hidden"  id = "assignmentId" name="assignmentId" value = "" />
+            <input type="number" placeholder="0 - 100" name="grade" required>
+            <button type="submit" class="btn" onmouseover="setAssignmentId()">Add</button>
+            <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+        </form>
+    </div>
+    <p id="studentGrades"> </p>
+
+
+</main>
+
+
+<script src="assignment.js"></script>
+</body>
+</html>

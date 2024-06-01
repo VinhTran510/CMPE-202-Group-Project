@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LMS Syllabus Form</title>
+        <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="syllabus.css">
+</head>
+
+    
+<body>
+    
+
+    
+
+<h1>Syllabus Form</h1>
+<form id="syllabusForm">
+    <input type="text" id="title" name="title" placeholder="Course Title" required />
+    <input type="text" id="firstname" name="firstname" placeholder="First Name" required />
+    <input type="text" id="lastname" name="lastname" placeholder="Last Name" required />
+    <input type="text" id="code" name="code" placeholder="Course Code" required />
+    <input type="text" id="semester" name="semester" placeholder="Semester" required />
+    <input type="text" id="officeLocation" name="officeLocation" placeholder="Office Location" required />
+    <input type="text" id="officeHours" name="officeHours" placeholder="Office Hours" required />
+    <input type="text" id="classDaysTime" name="classDaysTime" placeholder="Class Days/Time" required />
+    <input type="text" id="classroom" name="classroom" placeholder="Classroom" required />
+    <textarea id="syllabusContent" name="syllabusContent" placeholder="Syllabus Content" required></textarea>
+    <button type="submit">Create Syllabus</button>
+    <button onclick="window.location='homepage.html';">Return Home</button>
+
+</form>
+
+
+<div id="responseArea"></div>
+
+<script src="syllabus.js"></script>
+</body>
+</html>

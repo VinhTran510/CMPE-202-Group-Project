@@ -1,0 +1,35 @@
+body, html {
+    height: 100%;
+    margin: 0;
+
+}
+
+
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Stack children vertically */
+    padding: 20px; /* Add some padding */
+}
+
+/* Optional: If you want the form to still be vertically centered before posting */
+.form-container {
+    width: 100%; /* Adjust width as needed */
+    max-width: 600px; /* Maximum width of the form */
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+button:hover {
+    background-color: #003d80; /* A darker blue on hover */
+}
+button {
+    padding: 10px 20px;
+    background-color: #0056b3; /* Example: a medium blue background */
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+

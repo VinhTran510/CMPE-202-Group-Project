@@ -1,0 +1,51 @@
+main {
+    margin-left: 200px; /* Should be the same as the width of the nav */
+    /* Other styles... */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #5c6bc0;
+    color: white;
+}
+
+#courseName {
+    text-align: center;
+    font-size: 3em;
+    margin-top: 20px;
+
+}
+
+#semester, #faculty {
+    text-align: center;
+    font-size: 1.5em;
+    margin-top: 10px;
+}
+
+body {
+    display: flex;
+    flex-direction: row;
+    margin-right: 50px; /* Should be the same as the width of the nav */
+    height: 100vh;
+}
+
+main {
+    flex-grow: 1;
+    /* Other styles... */
+}

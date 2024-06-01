@@ -1,0 +1,160 @@
+[{
+  "_id": 1,
+  "courseName": "Introduction to Programming",
+  "semester": "FA2021",
+  "semesterID": 1,
+  "isCurrent": false,
+  "faculty": "Lee",
+  "students": [
+    1,
+    2,
+    3
+  ],
+  "grades": {
+    "1": 85,
+    "2": 90,
+    "3": 95
+  },
+  "assignmentList": [
+    1,
+    2
+  ],
+  "facultyId": 1
+},
+{
+  "_id": 2,
+  "courseName": "Data Structures",
+  "semester": "SP2022",
+  "semesterID": 2,
+  "isCurrent": false,
+  "faculty": "Green",
+  "students": [
+    1,
+    2,
+    3
+  ],
+  "grades": {
+    "1": 88,
+    "2": 92,
+    "3": 96
+  },
+  "assignmentList": [
+    2,
+    3
+  ],
+  "facultyId": 2
+},
+{
+  "_id": 3,
+  "courseName": "Computer Networks",
+  "semester": "FA2023",
+  "semesterID": 3,
+  "isCurrent": false,
+  "faculty": "Mary",
+  "students": [
+    1,
+    2,
+    3
+  ],
+  "grades": {
+    "1": 89,
+    "2": 93,
+    "3": 97
+  },
+  "assignmentList": [
+    1,
+    3
+  ],
+  "facultyId": 3
+},
+{
+  "_id": 4,
+  "courseName": "Operating Systems",
+  "semester": "SP2024",
+  "semesterID": 4,
+  "isCurrent": true,
+  "published": true,
+  "_class": "com.example.cmpe202project.model.CourseManager"
+},
+{
+  "_id": 5,
+  "courseName": "Software Engineering",
+  "semester": "FA2021",
+  "semesterID": 1,
+  "isCurrent": false,
+  "facultyID": 3
+},
+{
+  "_id": 6,
+  "courseName": "Machine Learning",
+  "semester": "SP2022",
+  "semesterID": 2,
+  "isCurrent": false,
+  "facultyID": 2
+},
+{
+  "_id": 7,
+  "courseName": "Database Management",
+  "semester": "FA2023",
+  "semesterID": 3,
+  "isCurrent": false,
+  "facultyID": 1
+},
+{
+  "_id": 8,
+  "courseName": "Web Technologies",
+  "semester": "SP2024",
+  "semesterID": 4,
+  "isCurrent": true,
+  "published": true,
+  "_class": "com.example.cmpe202project.model.CourseManager"
+},
+{
+  "_id": 9,
+  "courseName": "Cloud Computing",
+  "semester": "FA2021",
+  "semesterID": 1,
+  "isCurrent": false,
+  "facultyID": 3
+},
+{
+  "_id": 10,
+  "courseName": "Cyber Security",
+  "semester": "SP2022",
+  "semesterID": 2,
+  "isCurrent": false,
+  "facultyID": 1
+},
+{
+  "_id": 11,
+  "courseName": "Artificial Intelligence",
+  "semester": "FA2023",
+  "semesterID": 3,
+  "isCurrent": false,
+  "facultyID": 2
+},
+{
+  "_id": 12,
+  "courseName": "Quantum Computing",
+  "semester": "SP2024",
+  "semesterID": 4,
+  "isCurrent": true,
+  "published": true,
+  "facultyID": 1
+},
+{
+  "_id": 13,
+  "courseName": "Mobile App Development",
+  "semester": "FA2021",
+  "semesterID": 1,
+  "isCurrent": false,
+  "facultyID": 3
+},
+{
+  "_id": 14,
+  "courseName": "Ethical Hacking",
+  "semester": "FA2024",
+  "semesterID": 5,
+  "isCurrent": false,
+  "facultyID": 2
+}]

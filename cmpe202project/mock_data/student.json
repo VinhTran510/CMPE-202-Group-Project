@@ -1,0 +1,59 @@
+[
+  {
+    "_id": 1,
+    "firstName": "John",
+    "lastName": "Doe",
+    "email": "john.doe@example.com",
+    "password": "password123",
+    "courses": [1,2,3],
+    "assignments":{
+      "1": 85,
+      "2": 88,
+      "3":90
+    },
+    "notifications":{
+      "push": false,
+      "email": true,
+      "sms": false
+    }
+
+
+  },
+  {
+    "_id": 2,
+    "firstName": "Jane",
+    "lastName": "Doe",
+    "email": "jane.doe@example.com",
+    "password": "password123",
+    "courses": [1, 2,3],
+    "assignments":{
+      "1": 90,
+      "2": 92,
+      "3":95
+    },
+    "notifications":{
+      "push": true,
+      "email": true,
+      "sms": false
+    }
+  },
+  {
+    "_id": 3,
+    "firstName": "Alice",
+    "lastName": "Smith",
+    "email": "alice.smith@example.com",
+    "password": "password123",
+    "courses": [1, 2,3],
+    "assignments":{
+      "1": 78,
+      "2": 80,
+      "3":85
+    },
+    "notifications":{
+      "push": false,
+      "email": false,
+      "sms": false
+    }
+
+  }
+]

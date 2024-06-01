@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LMS Syllabus Form</title>
+    <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+<nav>
+    <h1>View Courses</h1>
+    <ul>
+        <li><a href="adminView.html">Courses</a></li>
+        <li><a href="assign.html">Assign Course</a></li>
+    </ul>
+</nav>
+
+<main>
+    <form id="searchForm">
+        <label>Faculty Name:</label>
+        <input type="text" id="firstName" name="firstName" placeholder="First name...">
+        <input type="text" id="lastName" name="lastName" placeholder="Last name...">
+        <label for="semester">Semester:</label>
+        <select id="semester" name="semester">
+            <option value="">All</option>
+            <option value="FA2021">FA2021</option>
+            <option value="SP2022">SP2022</option>
+            <option value="FA2023">FA2023</option>
+            <option value="SP2024">SP2024</option>
+            <option value="FA2024">FA2024</option>
+        </select>
+        <button type="submit">Search</button>
+    </form>
+        <div id="searchResults" class="search"></div>
+        <br>
+</main>
+
+<script src="admin.js"></script>
+</body>
+</html>

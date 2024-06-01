@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LMS Syllabus Form</title>
+    <link rel="stylesheet" href="assign.css">
+</head>
+<body>
+<nav>
+    <h1>Assign Course</h1>
+    <ul>
+        <li><a href="adminView.html">Courses</a></li>
+        <li><a href="assign.html">Assign Course</a></li>
+    </ul>
+</nav>
+
+<main>
+    <div class="container">
+        <h1>Course Form</h1>
+        <form id="courseForm">
+            <input type="text" id="courseName" name="title" placeholder="Course Name" required />
+            <input type="text" id="semester" name="semester" placeholder="Semester" required />
+            <!--            <input type="text" id="facultyFirstName" name="facultyFirstName" placeholder="Faculty First Name" required />-->
+            <!--            <input type="text" id="facultyLastName" name="facultyLastName" placeholder="Faculty Last Name" required />-->
+            <input type="text" id="email" name="email" placeholder="Faculty Email" required />
+            <button type="submit">Create Course</button>
+        </form>
+        <div id="responseArea"></div>
+    </div>
+</main>
+
+<script src="assign.js"></script>
+</body>
+</html>

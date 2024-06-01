@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        form {
+            background: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            width: 400px; /* Set a fixed width for the form */
+        }
+        h2 {
+            text-align: center;
+            font-size: 24px;
+        }
+        div {
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            margin-bottom: 10px;
+            font-size: 18px;
+        }
+        input[type="text"], input[type="password"], select, button {
+            width: 100%; /* Consistent width for all form elements */
+            padding: 12px; /* Consistent padding for all form elements */
+            border: 2px solid #ccc;
+            border-radius: 6px;
+            font-size: 16px; /* Consistent font size for text inside inputs */
+            box-sizing: border-box; /* Include padding and border in the element's total width and height */
+        }
+        button {
+            background-color: #5c67f2;
+            color: white;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #4a54e1;
+        }
+    </style>
+</head>
+<body>
+<form  method="post">
+    <h2>Please Sign In</h2>
+    <div>
+        <label for="username">Username</label>
+        <input type="text" id="username" name="username" required>
+    </div>
+    <div>
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" required>
+    </div>
+    <div>
+        <label for="role">Role</label>
+        <select id="role" name="role" required>
+            <option value="">Select a role</option>
+            <option value="ADMIN">Admin</option>
+            <option value="STUDENT">Student</option>
+            <option value="FACULTY">Faculty</option>
+        </select>
+    </div>
+    <button type="submit">Sign in</button>
+</form>
+</body>
+</html>

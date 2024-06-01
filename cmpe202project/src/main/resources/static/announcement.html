@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post Announcement</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="announcement.css" rel="stylesheet">
+    <!-- Include Quill stylesheet -->
+    <link href="https://cdn.quilljs.com/1.3.6/quill.snow.css" rel="stylesheet">
+    <link rel="stylesheet" href="nav.css">
+</head>
+    
+    
+<body>
+
+
+
+<div class="container">
+    <div class="form-container">
+        <h2>Post an Announcement</h2>
+        <form>
+            <div class="form-group">
+                <label for="title">Title:</label>
+                <input type="text" class="form-control" id="title" required>
+            </div>
+            <div class="form-group">
+                <label>Announcement:</label>
+                <!-- Quill Editor Container -->
+                <div id="editor-container" style="height: 200px;"></div>
+            </div>
+            <div class="form-group">
+                <label for="postTo">Post to:</label>
+                <select class="form-control" id="postTo">
+                    <option selected>Choose...</option>
+                    <option value="department">Department</option>
+                    <option value="faculty">Faculty</option>
+                    <option value="all_students">All Students</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="attachment">Attachment:</label>
+                <input type="file" class="form-control-file" id="attachment">
+            </div>
+            <button type="button" id="submitBtn">Post Announcement</button>
+            <button onclick="window.location='homepage.html';">Return Home</button>
+        </form>
+    </div>
+</div>
+
+<div id="responseArea" >
+    <!-- Announcement details will be injected here -->
+</div>
+
+<!-- Include Quill library and other scripts at the end of the body to ensure DOM is loaded -->
+<script src="https://cdn.quilljs.com/1.3.6/quill.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.0/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="announcement.js"></script>
+</body>
+</html>

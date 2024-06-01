@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pineapple</title>
+    <link rel="stylesheet" type="text/css" href="assignments.css">
+    <link rel="stylesheet" href="navbar.css">
+</head>
+<body>
+<nav>
+    <h1><a href="homepage.html" style="color: white; text-decoration: none;">Pineapple</a></h1>    <ul>
+    <li><a href="homepage.html" id="home" >Home</a></li>
+    <li><a href="" id="assignment" onmouseover="setAssignmentLink()" >Assignments</a></li>
+    <li><a href="" id="student" onmouseover="setStudentLink()" >Students</a></li>
+    <li><a href="announcement.html" id="announcement" >Announcement</a></li>
+    <li><a href="syllabus.html"  >Syllabus</a></li>
+</ul>
+</nav>
+
+<main>
+    <h1 > Assignments
+    <button class="open-button" onclick="openForm()">New</button>
+    </h1>
+    <div class="form-popup" id="myForm">
+  <form action="/assignments/new" method = "post" class="form-container">
+    <h1>New Assignment</h1>
+
+    <label><b>Title</b></label>
+    <input type="text" placeholder="Title" name="title" required>
+
+    <label><b>Quiz</b></label>
+      <input type="checkbox" id="isQuiz" name="isQuiz" value="0" onclick='handleClick(this);'>
+      <input type="hidden"  id="courseId" name="courseId" value = "0">
+    <button type="submit" class="btn" onmouseover="setCourseId()">Create</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+  </form>
+</div>
+    <p id="listOfAssignments"> </p>
+    
+
+</main>
+    
+    
+<script src="assignments.js">
+</script>
+</body>
+</html>

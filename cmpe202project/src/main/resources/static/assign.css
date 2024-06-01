@@ -1,0 +1,98 @@
+/* Reset Styles */
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0; /* Remove default margin */
+    padding: 0;
+    background-color: #f5f5f5;
+    color: #333;
+    display: flex;
+}
+
+/* Navigation Styles */
+nav {
+    background-color: #3f51b5;
+    padding: 20px;
+    width: 150px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    position: fixed;
+}
+
+nav h1 {
+    margin: 0;
+    color: #fff;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+}
+
+nav ul li {
+    margin-bottom: 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    display: block;
+    padding: 10px;
+}
+
+nav ul li a:hover {
+    background-color: #5c6bc0;
+}
+
+.container {
+    width: 80%;
+    max-width: 600px;
+    height: 90%;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    text-align: center;
+    margin-left: 600px;
+    margin-top: 170px;
+    background: white;
+}
+
+#pageTitle {
+    margin: 20px 0; /* Adds space around the title */
+    text-align: center; /* Centers the text within the h1 element */
+}
+
+/* Style inputs and textarea */
+input[type="text"],
+textarea {
+    padding: 20px;
+    margin: 10px; /* Adds space below each input/textarea */
+    border: 1px solid #ccc; /* Light grey border */
+    width: 340px;
+    font-size: 15px;
+}
+
+button {
+    padding: 10px 130px;
+    background-color: #0056b3; /* Example: a medium blue background */
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin: 10px;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+button:hover {
+    background-color: #003d80; /* A darker blue on hover */
+}

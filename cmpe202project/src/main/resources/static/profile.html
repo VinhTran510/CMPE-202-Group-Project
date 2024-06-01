@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Profile</title>
+    <link rel="stylesheet" href="navbar.css">
+
+    <link rel="stylesheet" href="profile.css">
+
+</head>
+<body>
+<nav>
+    <h1><a href="student.html" style="color: white; text-decoration: none;">Canvas-Like LMS</a></h1>    <ul>
+        <li><a href="profile.html">Profile</a></li>
+        <li><a href="courses_view.html">Courses</a></li>
+        <li><a href="grades.html">Grades</a></li>
+    </ul>
+</nav>
+
+<main>
+    <div id="profileContainer">
+        <h2>Profile Settings</h2>
+        <div id="profileInfo">
+            <div>
+                <p>Name: <span id="displayName"></span></p>
+                <p>Email: <span id="displayEmail"></span></p>
+                <p>Password: ********</p>
+            </div>
+            <button id="editButton">Edit Profile</button>
+        </div>
+    </div>
+    <form id="profileForm" style="display: none;">
+        <label for="name">First Name:</label><br>
+        <input type="text" id="name" name="name"><br>
+        <label for="lastName">Last Name:</label><br>
+        <input type="text" id="lastName" name="lastName" disabled><br>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email"><br>
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password"><br>
+        <input type="submit" value="Submit">
+    </form>
+    <p>SMS Notification:</p>
+    <label class="switch">
+        <input type="checkbox" id="smsNotification">
+        <span class="slider round"></span>
+    </label>
+
+    <p>Email Notification:</p>
+    <label class="switch">
+        <input type="checkbox" id="emailNotification">
+        <span class="slider round"></span>
+    </label>
+
+    <p>Push Notification:</p>
+    <label class="switch">
+        <input type="checkbox" id="pushNotification">
+        <span class="slider round"></span>
+    </label>
+
+
+</main>
+
+<script src="profile.js"></script>
+</body>
+</html>

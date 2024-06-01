@@ -1,0 +1,30 @@
+/* Make the table span the whole page */
+table {
+    width: 100%;
+    table-layout: fixed; /* This makes the table respect the width */
+}
+
+/* Make the course name column take up the remaining space */
+td:first-child {
+    width: auto; /* This makes the column take up the remaining space */
+}
+
+/* Add styles for table headers */
+th {
+    background-color: #3f51b5;
+    color: white;
+    padding: 10px;
+    text-align: left;
+}
+
+/* Add styles for table data */
+td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+main {
+    margin-left: 200px; /* Should be the same as the width of the nav */
+    /* Other styles... */
+}

@@ -1,0 +1,38 @@
+body {
+    background-color: #f8f9fa; /* Light gray background for a subtle look */
+}
+.container {
+    background: white; /* White background for the main content area */
+    border-radius: 8px; /* Rounded corners for the container */
+    box-shadow: 0 0 15px rgba(0,0,0,0.1); /* Subtle shadow for depth */
+    padding: 20px; /* Padding inside the container */
+    margin-top: 40px; /* Space from the top of the page */
+    margin-bottom: 40px; /* Space from the bottom of the page */
+    margin-left: auto; /* Center align the container */
+    margin-right: auto; /* Center align the container */
+    width: 50%; /* Adjust this value to change the width of the container */
+}
+.nav-tabs .nav-link {
+    color: #495057; /* Dark gray color for the tab text */
+}
+.nav-tabs .nav-link.active {
+    color: #0d6efd; /* Bootstrap primary blue for active tab text */
+    border-color: #dee2e6 #dee2e6 #fff; /* Border colors to merge with the content below */
+}
+.list-group-item {
+    border-left: 3px solid #0d6efd; /* Blue left border for list items for a pop of color */
+}
+.btn-outline-light {
+    background-color: #0d6efd; /* Changing to Bootstrap primary blue background */
+    color: white; /* White text color for the button */
+    border: 1px solid #0d6efd; /* Same color border to match the background */
+}
+.list-group-item {
+    transition: transform 0.3s;
+}
+
+.list-group-item:hover {
+    transform: scale(1.05);
+    border: 1px solid #0d6efd;
+    z-index: 3000;
+}
